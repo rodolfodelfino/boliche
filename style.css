@@ -24,11 +24,40 @@ h1 {
 
 .team-score {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 10px;
 }
 
+.team-score span {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+}
+
 .team-score input {
-    width: 50px;
+    width: 40px;
     text-align: center;
+    margin-bottom: 5px;
+}
+
+.total {
+    flex-basis: 100%;
+    font-weight: bold;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .team-score input {
+        width: 30px;
+    }
 }
